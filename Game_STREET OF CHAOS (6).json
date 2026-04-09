@@ -1,0 +1,120 @@
+{
+  "name": "STREET OF CHAOS",
+  "menuBackgroundImage": "",
+  "defaultRessources": {
+    "backgrounds": [],
+    "decksUrl": ""
+  },
+  "customHelp": "",
+  "cardRotation": 45,
+  "cards": {
+    "dataUrl": "https://raw.githubusercontent.com/ConvexGull/soc-data/refs/heads/main/CardList.json",
+    "cardBack": ""
+  },
+  "deckBuilding": {
+    "mainFilters": [
+      "HERÓI",
+      "MÁGICA",
+      "CIDADÃO",
+      "EQUIPAMENTO",
+      "BASE"
+    ],
+    "formats": [
+      {
+        "title": "PADRÃO",
+        "gameplay": "PADRÃO",
+        "customCategories": [
+          "PADRÃO"
+        ]
+      }
+    ]
+  },
+  "gameplay": {
+    "PADRÃO": {
+      "mulligan": {
+        "info": "devolva pra o fundo até 3 cartas e compre novamente",
+        "startingHandSize": "5",
+        "drawNewHand": true,
+        "putSelectionAtBottom": false,
+        "drawNewSelectedCards": false
+      },
+      "newTurn": {
+        "drawOnStart": true,
+        "sharedTurn": false,
+        "firstPlayerTokenName": "",
+        "drawPerTurn": 1
+      },
+      "defaultNotes": "",
+      "tokens": [],
+      "countersStartingValues": [
+        "0",
+        0
+      ],
+      "hideFacedDownCards": false,
+      "sections": {
+        "customSections": [
+          "CIDADÕES",
+          "EQUIPAMENTOS",
+          "BASES",
+          "HERÓI"
+        ],
+        "layout": {
+          "direction": "column",
+          "content": [
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "HERÓI",
+                  "style": {
+                    "width": "15vh"
+                  }
+                },
+                {
+                  "section": "CIDADÕES"
+                }
+              ]
+            },
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "EQUIPAMENTOS"
+                },
+                {
+                  "section": "BASES",
+                  "optional": {
+                    "key": "Extra Deck"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "categoriesAlreadyOnBoard": [
+          "PADRÃO"
+        ],
+        "autoPlayFromHand": {},
+        "autoPlayFromStack": {},
+        "sectionsDict": {
+          "SUCATA": {
+            "title": "SUCATA",
+            "isHidden": "opponent-only",
+            "height": "SMALL",
+            "alignment": "START",
+            "opponentAlignment": false,
+            "noAutoPayTo": "true",
+            "isHorizontalAllowed": false,
+            "displayedTitle": "Ressources",
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false,
+            "noQuickActions": false
+          }
+        }
+      }
+    }
+  }
+}
