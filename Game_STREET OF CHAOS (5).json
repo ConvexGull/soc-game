@@ -51,35 +51,57 @@
         0
       ],
       "hideFacedDownCards": false,
-      "sections": {
+     "sections": {
         "customSections": [
-          "BASES",
-          "CAMPO DE BATALHA",
-          "EQUIPAMENTOS",
-          "HERÓI"
+          "Creatures",
+          "Mana",
+          "Other",
+          "Commander",
+          "ExtraDeck",
+          "Temporary"
         ],
         "layout": {
           "direction": "column",
-          "isSymetricalForOpponents": false,
           "content": [
             {
-              "section": "CAMPO DE BATALHA",
-              "style": false
-            },
-            {
               "direction": "row",
-              "style": false,
               "content": [
                 {
                   "section": "HERÓI",
-                  "style": false
+                  "style": {
+                    "width": "15vh"
+                  }
                 },
                 {
-                  "section": "EQUIPAMENTO",
-                  "style": false
+                  "section": "CIDADÕES"
                 }
-              ],
-              "isSymetricalForOpponents": false
+              ]
+            },
+            {
+              "direction": "row",
+              "content": [
+                {
+                  "section": "EQUIPAMENTOS"
+                },
+                {
+                  "section": "Other"
+                },
+                {
+                  "section": "ExtraDeck",
+                  "optional": {
+                    "key": "Extra Deck"
+                  }
+                },
+                {
+                  "section": "Temporary",
+                  "style": {
+                    "width": "20%"
+                  },
+                  "optional": {
+                    "key": "Temporary"
+                  }
+                }
+              ]
             }
           ]
         },
