@@ -35,8 +35,8 @@
         "info": "devolva pra o fundo até 3 cartas e compre novamente",
         "startingHandSize": "5",
         "drawNewHand": true,
-        "putSelectionAtBottom": false,
-        "drawNewSelectedCards": false
+        "putSelectionAtBottom": true,
+        "drawNewSelectedCards": true
       },
       "newTurn": {
         "drawOnStart": true,
